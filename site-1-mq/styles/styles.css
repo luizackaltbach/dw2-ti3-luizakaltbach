@@ -1,0 +1,541 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: white;
+}
+
+header {
+    background-color: rgb(0, 113, 133);
+    height: 8vh;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3.125rem;
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+}
+
+ul {
+    display: flex;
+    gap: 6.25rem;
+    list-style-type: none;
+    justify-content: left;
+    color: white;
+}
+
+.pesquisa {
+    display: flex;
+    width: 20vw;
+    height: 50%;
+    background-color: rgb(133, 212, 226);
+    border-radius: 5rem;
+    justify-content: flex-end;
+    padding-right: 1rem;
+    align-items: center;
+}
+
+.pesquisa img {
+    display: flex;
+    width: 6%;
+    height: 60%;
+    margin-top: 3px;
+}
+
+main {
+    position: relative;
+    width: 100%;
+}
+
+.cima {
+    position: relative;
+    width: 100%;
+    height: 48vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.imagem-fundo {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    object-fit: cover;
+}
+
+.conteudo {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.titulo1 {
+    position: absolute;
+    top: 15vh;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    color: rgb(48, 115, 135);
+    white-space: nowrap;
+    font-size: 5rem;
+}
+
+.subti1 {
+    position: absolute;
+    top: 24vh;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    color: rgb(48, 115, 135);
+    white-space: nowrap;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.bt1 {
+    height: 2.5rem;
+    width: 7.5rem;
+    z-index: 2;
+    position: absolute;
+    top: 33vh;
+    left: 38%;
+    background-color: rgb(48, 115, 135);
+    border-radius: 1.25rem;
+    color: white;
+    font-family: inherit;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.bt2 {
+    height: 2.5rem;
+    width: 7.5rem;
+    z-index: 2;
+    position: absolute;
+    top: 33vh;
+    left: 54%;
+    border-radius: 1.25rem;
+    background-color: white;
+    color: rgb(48, 115, 135);
+    font-family: inherit;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.caixas {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 5rem;
+    row-gap: 15vh;
+    padding: 3vh 5rem 10vh 5rem;
+    width: 100%;
+    max-width: 118rem;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+    color: rgb(7, 126, 177);
+}
+
+.subcontainer {
+    height: 30vh;
+    width: 100%;
+    margin-bottom: 0.8rem;
+}
+
+.imagem {
+    width: 100%;
+    height: 100%;
+}
+
+.imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.titulo2 {
+    color: rgb(0, 113, 133);
+    align-self: flex-start;
+    font-size: 1.7rem;
+}
+
+.subti2 {
+    color: black;
+    align-self: flex-start;
+    font-weight: normal;
+    font-size: 1.25rem;
+}
+
+.bt3 {
+    height: 2rem;
+    width: 6.5rem;
+    align-self: flex-start;
+    background-color: rgb(48, 115, 135);
+    border-radius: 1.25rem;
+    color: white;
+    font-family: inherit;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-top: 0.2rem;
+}
+
+.b1 {
+    grid-column: span 3;
+    grid-row: 1;
+}
+
+.b2 {
+    grid-column: span 3;
+    grid-row: 1;
+}
+
+.b7 {
+    grid-column: span 6;
+    grid-row: 1;
+    width: 100%;
+}
+
+.b7 .subcontainer {
+    height: auto;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.b7 .texto {
+    font-size: 3.2rem;
+    margin-bottom: 0.1rem;
+}
+
+.b7 .subtexto {
+    color: black;
+    font-weight: normal;
+    font-size: 1.6rem;
+    margin-bottom: 1.2rem;
+}
+
+.b7 .desc {
+    white-space: normal;
+    color: black;
+    text-align: justify;
+    width: 100%;
+    font-size: 1.22rem;
+    line-height: 1.65;
+    font-weight: lighter;
+}
+
+.b3 {
+    grid-column: span 3;
+    grid-row: 2;
+}
+
+.b4 {
+    grid-column: span 3;
+    grid-row: 2;
+}
+
+.b5 {
+    grid-column: span 3;
+    grid-row: 2;
+}
+
+.b6 {
+    grid-column: span 3;
+    grid-row: 2;
+}
+
+@media (max-width: 1440px) {
+    .caixas {
+        grid-template-columns:  1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 4rem;
+        row-gap: 6rem;
+    }
+
+    .b1 {
+        grid-column: span 2;
+        grid-row: 1;
+    }
+
+    .b2 {
+        grid-column: span 2;
+        grid-row: 1;
+    }
+
+    .b3 {
+        grid-column: span 2;
+        grid-row: 1;
+    }
+
+    .b4 {
+        grid-column: span 2;
+        grid-row: 2;
+    }
+
+    .b5 {
+        grid-column: span 2;
+        grid-row: 2;
+    }
+
+    .b6 {
+        grid-column: span 2;
+        grid-row: 2;
+    }
+
+    .b7 {
+        grid-column: 1 / -1;
+        grid-row: 3;
+        width: 100%;
+        margin-top: 2rem;
+    }
+}
+
+@media (min-width: 451px) and (max-width: 1024px) {
+    header {
+        height: 8vh;
+        padding: 0 2rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    ul {
+        gap: 2.5rem;
+        font-size: 0.95rem;
+    }
+
+    .pesquisa {
+        width: 22vw;
+        height: 50%;
+        padding-right: 0.8rem;
+    }
+
+    .pesquisa img {
+        width: 14px;
+        height: auto;
+    }
+
+    .cima {
+        height: 52vh;
+    }
+
+    .imagem-fundo {
+        object-fit: cover;
+    }
+
+    .titulo1 {
+        font-size: 3.5rem;
+        top: 10vh;
+    }
+
+    .subti1 {
+        font-size: 1.6rem;
+        top: 22vh;
+    }
+
+    .bt1 {
+        top: 34vh;
+        left: 32%;
+    }
+
+    .bt2 {
+        top: 34vh;
+        left: 54%;
+    }
+
+    .caixas {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        padding: 4rem 3rem;
+    }
+
+    .container1 {
+        display: grid;
+        grid-template-columns: 45% 1fr;
+        grid-template-rows: auto auto auto;
+        column-gap: 2rem;
+        row-gap: 0.8rem;
+        align-items: start;
+        width: 100%;
+    }
+
+    .container1 .subcontainer {
+        grid-column: 1;
+        grid-row: 1 / span 3;
+        height: 25vh;
+        margin-bottom: 0;
+    }
+
+    .container1 .titulo2 {
+        grid-column: 2;
+        grid-row: 1;
+        margin: 0;
+    }
+
+    .container1 .subti2 {
+        grid-column: 2;
+        grid-row: 2;
+        margin: 0;
+    }
+
+    .container1 .bt3 {
+        grid-column: 2;
+        grid-row: 3;
+        margin: 0;
+        width: 6.5rem;
+        height: 2rem;
+    }
+
+    .b1 { order: 1; }
+    .b2 { order: 2; }
+    .b3 { order: 3; }
+    .b4 { order: 4; }
+    .b5 { order: 5; }
+    .b6 { order: 6; }
+    
+    .b7 { 
+        display: block;
+        order: 7;
+        width: 100%;
+    }
+
+    .b7 .subcontainer {
+        display: none;
+    }
+}
+
+@media (max-width: 540px) {
+    header {
+        padding: 0 0.8rem;
+    }
+
+    ul {
+        display: flex;
+        gap: 0.6rem;
+        font-size: 0.65rem;
+    }
+
+    ul li {
+        display: inline;
+    }
+
+    .pesquisa {
+        width: 25vw;
+        height: 45%;
+        padding-right: 0.4rem;
+    }
+
+    .pesquisa img {
+        width: 10px;
+        height: auto;
+    }
+
+    .titulo1 {
+        font-size: 2.8rem;
+        top: 12vh;
+    }
+
+    .subti1 {
+        font-size: 1.1rem;
+        top: 20vh;
+    }
+
+    .bt1 {
+        top: 28vh;
+        left: 20%;
+        width: 6.5rem;
+        height: 2.2rem;
+        font-size: 1.1rem;
+    }
+
+    .bt2 {
+        top: 28vh;
+        left: 55%;
+        width: 6.5rem;
+        height: 2.2rem;
+        font-size: 1.1rem;
+    }
+
+    .caixas {
+        display: flex;
+        flex-direction: column;
+        gap: 3.5rem;
+        padding: 2rem 1.5rem;
+    }
+
+    .container1 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.4rem;
+        width: 100%;
+        height: auto;
+    }
+
+    .container1 .subcontainer {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 10;
+        margin-bottom: 0.4rem;
+    }
+
+    .container1 .titulo2 {
+        font-size: 1.4rem;
+        margin: 0;
+    }
+
+    .container1 .subti2 {
+        font-size: 1.1rem;
+        margin: 0;
+    }
+
+    .container1 .bt3 {
+        align-self: flex-end;
+        margin-top: -2.3rem;
+        width: 5.5rem;
+        height: 1.8rem;
+        font-size: 0.8rem;
+    }
+
+    .b1 { order: 1; }
+    .b2 { order: 2; }
+    .b3 { order: 3; }
+    .b4 { order: 4; }
+    .b5 { order: 5; }
+    .b6 { order: 6; }
+    
+    .b7 { 
+        display: block;
+        order: 7;
+        width: 100%;
+    }
+
+    .b7 .subcontainer {
+        width: 100%;
+        height: auto;
+        aspect-ratio: auto;
+    }
+
+    .b7 .desc {
+        width: 100%;
+    }
+}
